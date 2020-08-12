@@ -1,0 +1,24 @@
+{
+  "name": "algorithm-problems-1",
+  "version": "1.0.0",
+  "description": "Prep Week 2 - Algorithm Problems 1",
+  "author": "Joonmo Kim <joonmo@vanillacoding.co>",
+  "license": "ISC",
+  "scripts": {
+    "build": "mocha --require @babel/register --reporter mocha-junit-reporter --reporter-options mochaFile=./report.xml",
+    "test": "mocha --require @babel/register --reporter spec"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "mocha-junit-reporter": "^1.22.0"
+  },
+  "dependencies": {
+    "sinon": "^9.0.0"
+  }
+}
