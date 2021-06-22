@@ -9,6 +9,7 @@ describe("String Rotation", function () {
 
   it("when length of a,b is different", function () {
     expect(isRotation("ABCD", "BC")).to.eql(false);
+    expect(isRotation("AAB", "ABA")).to.eql(true);
   });
 
   it("when one of string is empty", function () {
