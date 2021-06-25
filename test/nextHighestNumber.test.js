@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import nextHighestNumber from "../lib/nextHighestNumber";
 
-describe("Next Highest Number", function () {
+describe.only("Next Highest Number", function () {
   it("should find the next highest number", function () {
     expect(nextHighestNumber(1234)).to.eql(1243);
   });
@@ -13,7 +13,6 @@ describe("Next Highest Number", function () {
     expect(nextHighestNumber(15432)).to.eql(21345);
     expect(nextHighestNumber(154320)).to.eql(201345);
     expect(nextHighestNumber(21543)).to.eql(23145);
-    51543;
     expect(nextHighestNumber(51543)).to.eql(53145);
   });
 
